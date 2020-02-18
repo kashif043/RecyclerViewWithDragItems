@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryLight">#50ebed</color>
+    <color name="colorPrimaryReallyDark">#131B1F</color>
+    <color name="colorPrimary">#20cbdd</color>
+    <color name="colorPrimaryDisabled">#2620cbdd</color>
+    <color name="colorPrimaryDark">#008b9d</color>
+    <color name="colorPrimaryDarkDisabled">#26008b9d</color>
+    <color name="colorPrimaryDarkTranslucent">#aa008b9d</color>
+    <color name="colorPrimaryDarkFuzzy">#dd008b9d</color>
+    <color name="colorAccent">#00FF00</color>
+    <color name="colorAccentTransparent">#3300FF00</color>
+    <color name="darkGreen">#00bb00</color>
+    <color name="darkOrange">#dd6600</color>
+    <color name="darkRed">#cc0000</color>
+    <color name="darkGreyTransparent">#96000000</color>
+    <color name="pearl">#eeeeee</color>
+    <color name="colorSecondary">#3d4a54</color>
+
+    <color name="splash_bg">#535353</color>
+    <color name="white">#ffffff</color>
+    <color name="offWhite">#d6d5d5</color>
+    <color name="black">#000000</color>
+    <color name="black_light">#cfcfcf</color>
+    <color name="black_lightt">#cfcfcf</color>
+    <color name="blue">#2441e6</color>
+    <color name="sky_blue">#87CEEB</color>
+    <color name="red">#e62431</color>
+    <color name="light_red">#ec535d</color>
+    <color name="ripple">#ec6a53</color>
+    <color name="green">#24e62e</color>
+    <color name="yellow">#e6e624</color>
+    <color name="transparent">#0000ffff</color>
+
+    <color name="qrCode_bg">#F9F9F9</color>
+    <color name="colorScanQrCode">#323232</color>
+    <color name="login_icons_color">#343434</color>
+    <color name="colorLightGray">#B7B7B7</color>
+    <color name="colorMoreLightGray">#7D7D7D</color>
+    <color name="qr_bg_color">#fcfcfc</color>
+    <color name="background_color">#FFFFFF</color>
+
+    <color name="horizontal_line_color">#D6D6D6</color>
+    <color name="colorTouchCircle">#EFEFEF</color>
+
+    <color name="windowBackground">#1C1C1C</color>
+    <color name="colorButtonNormal">#FFFFFB</color>
+    <color name="textColorPrimary">#FFFFFB</color>
+    <color name="textColorPrimaryInverse">#1C1C1C</color>
+    <color name="overlay">#AA1C1C1C</color>
+    <color name="divider">#333333</color>
+    <color name="colorCroper">#99EEEEEE</color>
+
+</resources>

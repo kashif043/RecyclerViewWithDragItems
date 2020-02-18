@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="myListener"
+            type="com.example.kashif.android.ui.home.HomeActivity"/>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorScanQrCode">
+
+        <com.example.kashif.android.widgets.UbuntuButton
+            android:id="@+id/btnUploadFile"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_45sdp"
+            android:background="@drawable/button_white"
+            android:text="@string/upload_file"
+            android:textAllCaps="false"
+            android:elevation="@dimen/_8sdp"
+            android:textColor="@color/colorScanQrCode"
+            android:textSize="@dimen/_14sdp"
+            android:layout_marginStart="@dimen/_40sdp"
+            android:layout_marginEnd="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_50sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:onClick="@{()->myListener.goToGallery()}"
+            app:viewtypeUB="regular" />
+
+        <com.example.kashif.android.widgets.UbuntuButton
+            android:id="@+id/btnShowList"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_45sdp"
+            android:background="@drawable/button_white"
+            android:text="@string/show_list"
+            android:textAllCaps="false"
+            android:elevation="@dimen/_8sdp"
+            android:textColor="@color/colorScanQrCode"
+            android:textSize="@dimen/_14sdp"
+            android:layout_marginStart="@dimen/_40sdp"
+            android:layout_marginEnd="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_50sdp"
+            app:layout_constraintTop_toBottomOf="@id/btnUploadFile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:onClick="@{()->myListener.goToMyDocs()}"
+            app:viewtypeUB="regular" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="UBTextView">
+        <attr name="viewtypeUB" format="enum">
+            <enum name="regular" value="0" />
+            <enum name="light" value="1" />
+            <enum name="semi_bold" value="2" />
+            <enum name="bold" value="3" />
+        </attr>
+    </declare-styleable>
+
+</resources>

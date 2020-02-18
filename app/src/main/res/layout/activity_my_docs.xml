@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="listener"
+            type="com.example.kashif.android.ui.myDocsActivity.MyDocsActivity" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/qrCode_bg"
+        android:focusableInTouchMode="true">
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="0dp"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorScanQrCode"
+                app:title="" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/homeIv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:onClick="@{()->listener.goToHome()}"
+                    android:padding="12dp"
+                    app:srcCompat="@drawable/ic_back" />
+
+                <com.example.kashif.android.widgets.UbuntuTextView
+                    android:id="@+id/tvToolBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_toEndOf="@+id/homeIv"
+                    android:gravity="center"
+                    android:text="@string/my_docs"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_16sdp"
+                    app:viewtypeUB="regular" />
+
+                <RelativeLayout
+                    android:id="@+id/deleteLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/deleteIv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:onClick="@{()->listener.deleteSelectedFiles()}"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/ic_delete" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/selectionLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_toStartOf="@+id/deleteLayout">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/selectAllIv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:onClick="@{()->listener.selectAll()}"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/ic_select" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/deSelectAllIv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:onClick="@{()->listener.deSelectAll()}"
+                        android:padding="10dp"
+                        android:visibility="gone"
+                        app:srcCompat="@drawable/ic_checked_select_all" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/searchLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_toStartOf="@+id/selectionLayout">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/SearchIv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:onClick="@{()->listener.showSearchView()}"
+                        android:padding="10dp"
+                        android:visibility="visible"
+                        app:srcCompat="@drawable/ic_search" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/searchBarLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorScanQrCode"
+                    android:layoutAnimation="@anim/layout_animation_fall_down"
+                    android:visibility="gone">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/backHomeIv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:onClick="@{()->listener.hideSearchView ()}"
+                        android:padding="15dp"
+                        app:srcCompat="@drawable/ic_left_arrow" />
+
+                    <com.example.kashif.android.widgets.UbuntuEditText
+                        android:id="@+id/searchFiles"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/_40sdp"
+                        android:layout_toEndOf="@+id/backHomeIv"
+                        android:background="@null"
+                        android:gravity="center|start"
+                        android:hint="@string/search_here"
+                        android:inputType="text"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/offWhite"
+                        android:textSize="@dimen/_15sdp"
+                        app:viewtypeUB="light" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/cancelSearchIv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:onClick="@{()->listener.hideSearchView()}"
+                        android:padding="15dp"
+                        app:srcCompat="@drawable/ic_cancel_black" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </FrameLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvMyDocs"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layoutAnimation="@anim/layout_animation_fall_down"
+            android:visibility="visible"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/fabAddFolder"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginEnd="@dimen/_23sdp"
+            android:layout_marginBottom="@dimen/_23sdp"
+            android:background="@drawable/circle_light_black"
+            android:onClick="@{()->listener.createFilder()}"
+            android:padding="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:srcCompat="@drawable/ic_create_folder" />
+
+        <com.example.kashif.android.widgets.UbuntuTextView
+            android:id="@+id/empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/no_data_available"
+            android:textAllCaps="false"
+            android:textColor="@color/colorScanQrCode"
+            android:textSize="@dimen/_16sdp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:viewtypeUB="semi_bold" />
+
+        <ProgressBar
+            android:id="@+id/pbMyDocs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
+

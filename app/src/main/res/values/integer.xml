@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="guideline_percent_poinFive" format="float" type="integer">0.05</item>
+    <item name="guideline_percent_one" format="float" type="integer">0.1</item>
+    <item name="guideline_percent_oneThree" format="float" type="integer">0.13</item>
+    <item name="guideline_percent_oneFour" format="float" type="integer">0.14</item>
+    <item name="guideline_percent_oneFive" format="float" type="integer">0.15</item>
+    <item name="guideline_percent_oneSix" format="float" type="integer">0.16</item>
+    <item name="guideline_percent_two" format="float" type="integer">0.2</item>
+    <item name="guideline_percent_twoFive" format="float" type="integer">0.25</item>
+    <item name="guideline_percent_three" format="float" type="integer">0.3</item>
+    <item name="guideline_percent_threeFive" format="float" type="integer">0.35</item>
+    <item name="guideline_percent_four" format="float" type="integer">0.4</item>
+    <item name="guideline_percent_fourFive" format="float" type="integer">0.45</item>
+    <item name="guideline_percent_five" format="float" type="integer">0.5</item>
+    <item name="guideline_percent_fiveFive" format="float" type="integer">0.55</item>
+    <item name="guideline_percent_six" format="float" type="integer">0.6</item>
+    <item name="guideline_percent_sixFive" format="float" type="integer">0.65</item>
+    <item name="guideline_percent_seven" format="float" type="integer">0.7</item>
+    <item name="guideline_percent_sevenFive" format="float" type="integer">0.75</item>
+    <item name="guideline_percent_eight" format="float" type="integer">0.8</item>
+    <item name="guideline_percent_eightFive" format="float" type="integer">0.85</item>
+    <item name="guideline_percent_nine" format="float" type="integer">0.9</item>
+    <item name="guideline_percent_nineFive" format="float" type="integer">0.95</item>
+
+</resources>

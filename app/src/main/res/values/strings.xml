@@ -1,0 +1,32 @@
+<resources>
+
+    <string name="app_name">My Application</string>
+    <string name="upload_file">Upload a File</string>
+    <string name="show_list">Show List</string>
+    <string name="my_docs">My Docs</string>
+    <string name="search_here">Search Here</string>
+    <string name="no_data_available">No Data Found!</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="deleteSingleFile">Delete</string>
+    <string name="re_transmit">Re-transmit</string>
+    <string name="send_to">Send to</string>
+    <string name="transmit">Transmit</string>
+    <string name="file_upload_success">File upload Success</string>
+    <string name="file_upload_failure">File upload failed</string>
+    <string name="create_folder">Create Folder</string>
+    <string name="create">Create</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete Files</string>
+    <string name="delete_all_files">Are you sure? you want to delete these files?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="ok">Ok</string>
+    <string name="select_files_delete">Please Select some files to delete</string>
+    <string name="error">error</string>
+    <string name="success">success</string>
+    <string name="add_valid_file">You can not add a file into a file</string>
+    <string name="about_permission">About permissions</string>
+    <string name="dokmee_permission">The Application needs Camera and Storage permissions to work properly</string>
+
+</resources>
+

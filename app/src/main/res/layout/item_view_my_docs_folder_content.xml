@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+        <variable
+            name="model"
+            type="com.example.kashif.android.data.MyDocsDataModel"/>
+
+        <variable
+            name="listener"
+            type="com.example.kashif.android.ui.myDocsActivity.MyDocsAdapter.FolderViewHolder" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/white">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="@integer/guideline_percent_poinFive" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glEndOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="@integer/guideline_percent_eightFive" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glEndTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="@integer/guideline_percent_nineFive" />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/myDocsCbFolder"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:background="@null"
+            android:button="@drawable/checkbox"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/glStart"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/myDocsIvFolder"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            app:srcCompat="@drawable/ic_folder_docs"
+            android:onClick="@{()->listener.onFolderNameClicked(model)}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/myDocsCbFolder"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.example.kashif.android.widgets.UbuntuTextView
+            android:id="@+id/fileNameFolder"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_5sdp"
+            android:textColor="@color/colorScanQrCode"
+            android:textSize="@dimen/_12sdp"
+            android:onClick="@{()->listener.onFolderNameClicked(model)}"
+            app:layout_constraintEnd_toEndOf="@id/glEndOne"
+            app:layout_constraintStart_toEndOf="@id/myDocsIvFolder"
+            app:layout_constraintTop_toTopOf="@id/myDocsIvFolder"
+            app:viewtypeUB="regular" />
+
+        <com.example.kashif.android.widgets.UbuntuTextView
+            android:id="@+id/fileDateSizeFolder"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_5sdp"
+            android:textColor="@color/colorMoreLightGray"
+            android:textSize="@dimen/_11sdp"
+            app:layout_constraintEnd_toEndOf="@id/glEndOne"
+            app:layout_constraintStart_toEndOf="@id/myDocsIvFolder"
+            app:layout_constraintTop_toBottomOf="@id/fileNameFolder"
+            app:viewtypeUB="light" />
+
+        <View
+            android:id="@+id/dividerThree"
+            style="@style/Divider"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/glEndTwo" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/menuIvFolder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:alpha="0.6"
+            android:onClick="@{()->listener.onFolderMoreClicked(model)}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/glEndTwo"
+            app:layout_constraintStart_toStartOf="@id/glEndOne"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_menu" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,53 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">0dp</dimen>
+    <dimen name="activity_vertical_margin">0dp</dimen>
+
+    <dimen name="marginFive">05dp</dimen>
+    <dimen name="marginTen">10dp</dimen>
+    <dimen name="marginTwenty">20dp</dimen>
+    <dimen name="marginTwentyFive">25dp</dimen>
+    <dimen name="marginThirty">30dp</dimen>
+    <dimen name="marginForty">40dp</dimen>
+    <dimen name="marginFifty">50dp</dimen>
+    <dimen name="marginSixty">60dp</dimen>
+    <dimen name="marginSeventy">70dp</dimen>
+    <dimen name="marginEighty">80dp</dimen>
+    <dimen name="marginNinety">90dp</dimen>
+    <dimen name="marginHundred">100dp</dimen>
+
+    <dimen name="paddingFive">5dp</dimen>
+    <dimen name="paddingTen">10dp</dimen>
+    <dimen name="paddingTenFive">15dp</dimen>
+    <dimen name="paddingTwenty">20dp</dimen>
+    <dimen name="paddingThirty">30dp</dimen>
+    <dimen name="paddingForty">40dp</dimen>
+    <dimen name="paddingFifty">50dp</dimen>
+    <dimen name="paddingSixty">60dp</dimen>
+    <dimen name="paddingSeventy">70dp</dimen>
+    <dimen name="paddingEighty">80dp</dimen>
+    <dimen name="paddingNinety">90dp</dimen>
+    <dimen name="paddingHundred">100dp</dimen>
+
+    <dimen name="elevationTen">10dp</dimen>
+    <dimen name="elevationTwenty">20dp</dimen>
+    <dimen name="elevationThirty">30dp</dimen>
+    <dimen name="elevationForty">40dp</dimen>
+    <dimen name="elevationFifty">50dp</dimen>
+    <dimen name="elevationSixty">60dp</dimen>
+    <dimen name="elevationSeventy">70dp</dimen>
+    <dimen name="elevationEighty">80dp</dimen>
+    <dimen name="elevationNinety">90dp</dimen>
+    <dimen name="elevationHundred">100dp</dimen>
+
+    <dimen name="logo_circle">70dp</dimen>
+    <dimen name="logo_scan_qr">60dp</dimen>
+    <dimen name="logo_padding">20dp</dimen>
+    <dimen name="logo_elevation">12dp</dimen>
+    <dimen name="card_radius">6dp</dimen>
+    <dimen name="card_elevation">8dp</dimen>
+
+    <dimen name="login_scan_qr">35dp</dimen>
+    <dimen name="icon_padding_login">10dp</dimen>
+
+</resources>
